@@ -71,6 +71,7 @@ def cal(S1_contl, S1_wtr):
             try:
                 if S1_contl[key1, key2] > 0:
                     data3[key1, key2] = (S1_wtr[key1, key2] * 0.5/ S1_contl[key1, key2])
+                    # data3[key1, key2] = (S1_wtr[key1, key2] - S1_contl[key1, key2])
                 else:
                     data3[key1, key2] = 0
             except:
